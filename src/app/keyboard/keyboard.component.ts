@@ -17,8 +17,7 @@ export class KeyboardComponent {
     private audioService: AudioService
   ) { }
 
-  onTap($event: MouseEvent, key: Ikey): void {
-    console.log(key.note);
+  onTap(key: Ikey): void {
     this.audioService.playAudio(key.note);
   }
 

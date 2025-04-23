@@ -9,7 +9,7 @@ export class AudioService {
 
   playAudio(note: string): void {
     const audio = new Audio();
-    audio.src = `../../../public/assets/sounds/${note}.mp3`;
+    audio.src = `/assets/sounds/${note}.mp3`;
     audio.load();
     audio.play();
   }
