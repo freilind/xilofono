@@ -15,12 +15,12 @@ import {LogoComponent} from '../logo/logo.component';
 export class AppComponent {
   title = 'Xilofono';
 
-  do = signal('DO 𝄡');
-  re =signal( 'RE');
-  mi =signal( 'MI');
-  fa =signal( 'FA 𝄢');
-  sol =signal( 'SOL 𝄞');
-  la = signal('LA');
-  si = signal('SI');
-  do2 = signal('DO 𝄡');
+  do = signal({note: 'DO' ,label:'DO 𝄡'});
+  re =signal({note: 'RE' ,label:'RE'});
+  mi =signal({note: 'MI' ,label:'MI'});
+  fa =signal({note: 'FA' ,label:'FA 𝄢'});
+  sol =signal({note: 'SOL' ,label:'SOL 𝄞'});
+  la = signal({note: 'LA' ,label:'LA'});
+  si = signal({note: 'SI' ,label:'SI'});
+  do2 = signal({note: 'DO2' ,label:'DO 𝄡'});
 }
