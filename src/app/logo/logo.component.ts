@@ -1,7 +1,7 @@
 import {Component, signal} from '@angular/core';
 
 @Component({
-  selector: 'logo',
+  selector: 'app-logo',
   imports: [],
   templateUrl: './logo.component.html',
   styleUrl: './logo.component.css'

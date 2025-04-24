@@ -1,9 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LogoComponent } from './logo.component';
+import {AppComponent} from '../app/app.component';
+import {ComponentRef} from '@angular/core';
 
 describe('LogoComponent', () => {
   let component: LogoComponent;
+  let componentRef: ComponentRef<LogoComponent>
   let fixture: ComponentFixture<LogoComponent>;
 
   beforeEach(async () => {
@@ -19,5 +22,11 @@ describe('LogoComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it(`should have the '𝄞  Xilófono  𝄞'' title`, () => {
+    const fixture = TestBed.createComponent(LogoComponent);
+    const component = fixture.componentInstance;
+    expect(component.title()).toEqual('𝄞  Xilófono  𝄞');
   });
 });

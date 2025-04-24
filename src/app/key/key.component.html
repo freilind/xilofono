@@ -1,0 +1,9 @@
+<div class="flex h-12/12 rounded-2xl {{classKey}}"
+     (click)="onTap(key)" (tap)="onTap(key)">
+  <span class="relative flex h-full w-full">
+    <span class="absolute flex items-center justify-center md:pt-4  md:items-start h-full w-full active:animate-ping rounded-full opacity-75 {{classKey}}">
+      {{ key.label }}
+    </span>
+  </span>
+</div>
+
