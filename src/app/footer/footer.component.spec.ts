@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FooterComponent } from './footer.component';
+import {KeyboardComponent} from '../keyboard/keyboard.component';
 
 describe('FooterComponent', () => {
   let component: FooterComponent;
@@ -20,4 +21,11 @@ describe('FooterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have the 'Copyright' `, () => {
+    const fixture = TestBed.createComponent(FooterComponent);
+    const component = fixture.componentInstance;
+    expect(component.footer()).toEqual(`Copyright ${new Date().getFullYear()}`);
+  });
+
 });

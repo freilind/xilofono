@@ -6,7 +6,6 @@ import {ComponentRef} from '@angular/core';
 
 describe('LogoComponent', () => {
   let component: LogoComponent;
-  let componentRef: ComponentRef<LogoComponent>
   let fixture: ComponentFixture<LogoComponent>;
 
   beforeEach(async () => {
@@ -24,7 +23,7 @@ describe('LogoComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it(`should have the '𝄞  Xilófono  𝄞'' title`, () => {
+  it(`should have the '𝄞  Xilófono  𝄞' title`, () => {
     const fixture = TestBed.createComponent(LogoComponent);
     const component = fixture.componentInstance;
     expect(component.title()).toEqual('𝄞  Xilófono  𝄞');

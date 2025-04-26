@@ -6,11 +6,11 @@ import { Injectable } from '@angular/core';
 export class AudioService {
 
   constructor() { }
+  private audio = new Audio();
 
   playAudio(note: string): void {
-    const audio = new Audio();
-    audio.src = `/assets/sounds/${note}.mp3`;
-    audio.load();
-    audio.play();
+    this.audio.src = `/assets/sounds/${note}.mp3`;
+    this.audio.play();
   }
+
 }
