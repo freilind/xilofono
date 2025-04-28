@@ -78,4 +78,11 @@ describe('KeyboardComponent', () => {
     expect(component.do2().label).toEqual('DO 𝄡');
   });
 
+  it('should render the template with all notes', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const appKeyElements = compiled.querySelectorAll('app-key');
+
+    expect(appKeyElements.length).toBe(8);
+  });
+
 });

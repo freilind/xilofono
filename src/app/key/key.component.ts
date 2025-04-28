@@ -3,7 +3,7 @@ import {Ikey} from '../components/interfaces/Ikey';
 import {AudioService} from '../services/audio.service';
 
 @Component({
-  selector: 'key',
+  selector: 'app-key',
   imports: [],
   templateUrl: './key.component.html',
   styleUrl: './key.component.css'
