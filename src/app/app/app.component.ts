@@ -10,8 +10,7 @@ import {FooterComponent} from '../footer/footer.component';
     LogoComponent,
     KeyboardComponent,
     FooterComponent
-  ],
-  styleUrl: ''
+  ]
 })
 export class AppComponent {
 

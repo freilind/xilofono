@@ -1,5 +1,0 @@
-@import "tailwindcss";
-
-.logo {
-  @apply w-full flex justify-center pt-2 text-4xl text-transparent bg-clip-text bg-gradient-to-bl from-indigo-400 via-purple-500 to-pink-500
-}
